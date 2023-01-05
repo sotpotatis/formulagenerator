@@ -13,5 +13,4 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_SITE_TOKEN: ${{ secrets.NETLIFY_SITE_TOKEN }}
         run:
-          - chmod +x upload_to_netlify.sh
-          - ./upload_to_netlify.sh
+          - chmod +x upload_to_netlify.sh && ./upload_to_netlify.sh
