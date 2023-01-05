@@ -10,6 +10,6 @@ npx parcel build src/html/index.html
 echo "✅ Build completed!"
 echo "Uploading to Netlify..."
 npx netlify link --name $NETLIFY_SITE_ID
-npx netlify deploy --dir=dist --auth=$NETLIFY_SITE_TOKEN --alias=£NETLIFY_SITE_ID
+npx netlify deploy --dir=dist --auth=$NETLIFY_AUTH_TOKEN --alias=$NETLIFY_SITE_ID
 echo "✅ Uploaded to Netlify!"
 echo "🚀 Website successfully deployed to Netlify."
