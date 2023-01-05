@@ -9,7 +9,7 @@ jobs:
       - name: Setup Node.js and NPM
         uses: actions/setup-node@v3
       - name: Run uploading code
-        run: cd ${{ github.workspace }} && ls -a && chmod +x .github/workflows/upload_to_netlify.sh && ./github/workflows/upload_to_netlify.sh
+        run: cd ${{ github.workspace }} && ls -a && chmod +x .github/workflows/upload_to_netlify.sh && ./.github/workflows/upload_to_netlify.sh
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_SITE_TOKEN: ${{ secrets.NETLIFY_SITE_TOKEN }}
