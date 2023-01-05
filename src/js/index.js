@@ -39,7 +39,7 @@ const onEquationChange = () => {
     let explanationText = optionAddSpace.checked ? "\\quad": ""
     // Render different start if using compact mode
     if (optionCompact.checked){
-        explanationText = `\\bigl\\{`
+        explanationText += `\\bigl\\{`
     }
     else {
         explanationText += `\\left\\{\\begin{array}{l}`

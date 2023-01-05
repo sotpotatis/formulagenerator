@@ -1,5 +1,5 @@
 name: "🚀 Upload website to Netlify"
-run-name: "🚀 Upload website triggered by ${{ github.actor }}"
+run-name: "🚀 Upload website (triggered by ${{ github.actor }})"
 on: [push]
 jobs:
   Upload-To-Netlify:
